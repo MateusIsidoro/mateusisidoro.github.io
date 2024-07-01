@@ -1,0 +1,356 @@
+
+*{margin: 0px;}
+
+body{
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  /* width: 100vh; */
+  /* height: 100%; */
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: "Indie Flower", cursive;
+}
+
+.ínimg{
+  width: 100vw;
+  height: 200px;
+  background-color: brown;
+  box-shadow: 5px 5px 5px 5px #842593a3;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+aside{
+  background-color: rgb(229, 192, 111);
+  color: black;
+  height: 200vh;
+  width: 275px;
+  box-shadow: 5px 5px 5px 5px #842593a3;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-items: center;
+}
+
+.artigo{
+  background-color: #8b8b8b;
+  height: 200vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  justify-items: center;
+  z-index: 0;
+}
+
+.eu{
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.fundoeu{
+  height: 30%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(fundo.gif);
+  background-size: 100%;
+}
+
+.fundoeu2{
+  height: 30%;
+  width: 80%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+  justify-items: center;
+  z-index: 0;
+}
+
+.fundoeu img{
+  border-radius: 100%;
+  z-index: 99;
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.pagina{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;    
+}
+
+/* barra de rolagem tirada do site https://www.digitalocean.com/community/tutorials/css-scrollbars-pt */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(81, 76, 67);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(12, 12, 14);
+  border-radius: 20px;
+  border: 1px solid orange;
+  box-shadow: 2px bisque;
+}
+
+/* SCROLL */
+a{
+  text-decoration: none;
+  color: black;
+  transform: scale(1);
+  transition: 0.5s;
+  word-break: normal;
+}
+
+a:hover{
+  transform: scale(2);
+}
+
+.textos li a:hover ~ img {
+  display:inline;
+}
+
+.textos{
+  word-break: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  position: sticky;
+  top: 5%;
+}
+
+.fonte{
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+.fonte:hover{
+  transform: scale(1.2);
+}
+
+.creditos{
+  font-size: 30px;
+}
+
+.GH{
+  width: 155px;
+  height: 70px;
+}
+
+.textoo{
+  margin-top: 10px;
+  word-break: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.textoo ul{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+img{
+  height: 215px;
+  width: 215px;
+}
+
+#nome{
+  align-self: center;
+  justify-self: center;
+  font-size: 100px;
+  color: white;
+  z-index: 200;
+}
+
+.textos li{
+  margin-top: 30px;
+  transform: scale(1);
+  transition: 0.5s;
+  font-size: 20px;
+}
+
+.textos li:hover{
+  transform: scale(1.2);
+}
+
+.textos li img{
+  display: none;
+}
+
+.textos li img:hover{
+  display: inline;
+}
+
+#seta{
+  width: 10%;
+  height: 10%;
+}
+
+button{
+  width: 200px;
+  height: 200px;
+  border: none;
+  border-radius: 20px;
+  background-color: aliceblue;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  justify-items: center;
+  z-index: 0;
+  align-content: space-around;
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+button:hover{
+  transform: scale(1.4);
+  cursor: pointer;
+}
+button img{
+  height: 120px;
+  width: 150px;
+}
+
+.trabalho, .trabalho1, .trabalho2, .trabalho3, .trabalho4, .trabalho5{
+  border: 1px solid coral ;
+  width: 0px;
+  height: 0px;
+  z-index: 50;
+  position: fixed;
+  top: 25%;
+  left: 20%;
+  margin: 10px;
+  background-color: white;
+  backdrop-filter: blur(10px);
+  display: none;
+  z-index: 101;
+}
+
+#repos{
+  margin-top: -40px;
+}
+
+.ajustatrabalho{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.bibobaba{
+  width: 100px;
+  height: 100px;
+  transition: 1s;
+  animation: 1s;
+}
+
+.fechar{
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  border: 1px solid black;
+  background-color: red;
+  position: absolute;
+}
+
+.fundo{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  z-index: 3;
+  position: relative;
+}
+
+.bg{
+  background-color: hsl(0, 0%, 0%, 10%);
+  backdrop-filter: blur(20px);
+  width: 200vh;
+  min-width: 1000px;
+  height: 200vh;
+  z-index: 100;
+  display: none;
+  position: absolute;
+}
+
+.menu{
+  display:none;
+  width: 80px;
+  height: 80px;
+}
+@media screen and (max-width: 415px){
+  body{
+    width: -wabkit-fill-availble;
+    /* height: -wabkit-fill-availble; */
+  }
+  aside{
+    position: fixed;
+    width: 0px;
+    z-index: 100;
+    transition: 0.5s ease-in-out;
+    box-shadow: none;
+  }
+
+  ul{
+    display: none;
+  }
+
+  .trabalho, .trabalho1, .trabalho2, .trabalho3, .trabalho4, .trabalho5{
+    left: 0px;
+    width: 100vw;
+    height: 50%;
+  }
+
+  .ajustatrabalho{
+    width: 100vw;
+    height: 100%;
+    display: sticky;
+  }
+  .textos{
+    width: 100vw;
+  }
+
+  .menu{
+    display: flex;
+  }
+
+  .eu{
+    width: 100%;
+  }
+
+  .fundoeu2{
+    height: 35%;
+  }
+
+  .artigo{
+    width: 415px;
+    z-index: 99;
+    position: absolute;
+  }
+}
