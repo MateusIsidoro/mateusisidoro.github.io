@@ -12,7 +12,7 @@ body{
   font-family: "Indie Flower", cursive;
 }
 
-.ínimg{
+.inimg{
   width: 100vw;
   height: 200px;
   background-color: brown;
@@ -350,8 +350,10 @@ button img{
   }
 
   .artigo{
-    height: 100%;
     z-index: 99;
     position: absolute;
   }
+  .textoo{
+  height: 80%;
+}
 }
