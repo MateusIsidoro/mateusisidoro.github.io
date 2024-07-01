@@ -11,17 +11,6 @@ body{
   flex-direction: column;
   font-family: "Indie Flower", cursive;
 }
-
-.inimg{
-  width: 100vw;
-  height: 200px;
-  background-color: brown;
-  box-shadow: 5px 5px 5px 5px #842593a3;
-  z-index: 1;
-  display: flex;
-  flex-direction: row;
-}
-
 aside{
   background-color: rgb(229, 192, 111);
   color: black;
