@@ -4,8 +4,6 @@
 body{
   width: -webkit-fill-available;
   height: -webkit-fill-available;
-  /* width: 100vh; */
-  /* height: 100%; */
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
