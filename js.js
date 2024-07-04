@@ -76,8 +76,8 @@ function ajusta(body){
 }
 
 function hamburguer(){
-    const aside = document.getElementById("aside")
-    const ul = document.getElementById("ul")
+    const aside = document.querySelectorAll(".aside-mobile")[0]
+    const ul = document.querySelectorAll(".ul-mobile")[0]
 
     if(aside.style.width == "0px" || aside.style.width == ""){
         aside.style.width = "100vw"
