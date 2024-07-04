@@ -9,7 +9,7 @@ body{
   flex-direction: column;
   font-family: "Indie Flower", cursive;
 }
-aside{
+.aside-web, .aside-mobile{
   background-color: rgb(229, 192, 111);
   color: black;
   height: 200vh;
@@ -20,6 +20,14 @@ aside{
   flex-direction: column;
   justify-content: flex-start;
   justify-items: center;
+}
+
+.aside-mobile{
+  display: none;
+}
+
+.aside-web{
+  display: block;
 }
 
 .artigo{
@@ -296,12 +304,17 @@ button img{
     width: -wabkit-fill-availble;
     /* height: -wabkit-fill-availble; */
   }
-  aside{
+  .aside-mobile{
+    display: block;
     position: fixed;
     width: 0px;
     z-index: 100;
     transition: 0.5s ease-in-out;
     box-shadow: none;
+  }
+
+  .aside-web{
+    display: none;
   }
 
   ul{
